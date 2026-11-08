@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("Imagens/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.93);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 450px;
+}
+
+h1 {
+    color: #263238;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #607D8B;
+    margin-bottom: 15px;
+}
+
+.imagem-semaforo {
+    display: block;
+    width: 165px;
+    height: 300px;
+    object-fit: contain;
+    margin: 0 auto 18px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    padding: 13px;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    opacity: 0.88;
+}
+
+.btn.vermelho { background-color: #e53935; }
+.btn.amarelo { background-color: #f9a825; color: #222; }
+.btn.verde { background-color: #2e9d50; }
+.btn.desligar { background-color: #424242; }
+
+#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #263238;
+    font-size: 17px;
+}
+
+@media (max-width: 480px) {
+    .container { padding: 22px; }
+    h1 { font-size: 24px; }
+}

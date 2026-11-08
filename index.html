@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Manual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>🚦 Semáforo Manual</h1>
+        <p class="subtitulo">Escolhe uma cor para mudar o semáforo.</p>
+
+        <img id="imagemSemaforo" class="imagem-semaforo"
+             src="Imagens/desligado.png"Semáforo desligado">
+
+        <div class="botoes">
+            <button class="btn vermelho" onclick="ligarVermelho()">Vermelho</button>
+            <button class="btn amarelo" onclick="ligarAmarelo()">Amarelo</button>
+            <button class="btn verde" onclick="ligarVerde()">Verde</button>
+            <button class="btn desligar" onclick="desligar()">Desligar</button>
+        </div>
+
+        <p id="mensagem" aria-live="polite">Semáforo desligado</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
